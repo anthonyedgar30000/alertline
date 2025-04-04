@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./App.css";
 
 export default function App() {
   return (
@@ -39,27 +39,27 @@ export default function App() {
         <div className="flex justify-center gap-6 flex-wrap">
           <div>
             <img
-              src="https://placehold.co/300x200?text=Threat+1"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/SCADA_Security_Diagram.png/640px-SCADA_Security_Diagram.png"
               className="w-72 rounded shadow"
-              alt="Threat 1"
+              alt="Threat 1 - SCADA Security"
             />
-            <p className="mt-2">Threat 1</p>
+            <p className="mt-2">SCADA Exploitation</p>
           </div>
           <div>
             <img
-              src="https://placehold.co/300x200?text=Threat+2"
+              src="https://www.dragos.com/wp-content/uploads/2022/05/CaseStudy-Ransomware-OT-ICS.jpg"
               className="w-72 rounded shadow"
-              alt="Threat 2"
+              alt="Threat 2 - Ransomware in Industrial Control Systems"
             />
-            <p className="mt-2">Threat 2</p>
+            <p className="mt-2">Ransomware in ICS</p>
           </div>
           <div>
             <img
-              src="https://placehold.co/300x200?text=Threat+3"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Solar_Panel_Field.jpg/640px-Solar_Panel_Field.jpg"
               className="w-72 rounded shadow"
-              alt="Threat 3"
+              alt="Threat 3 - Solar Field Vulnerability"
             />
-            <p className="mt-2">Threat 3</p>
+            <p className="mt-2">Solar Field Vulnerability</p>
           </div>
         </div>
       </section>
@@ -77,6 +77,39 @@ export default function App() {
           <li>Canadian-made, mission-driven</li>
         </ul>
       </section>
+
+      <section className="p-10 bg-black text-white text-center">
+        <h2 className="text-2xl font-bold text-red-400 mb-4">
+          Real Incidents, Real Risk
+        </h2>
+        <p className="max-w-2xl mx-auto">
+          In 2024, the American Water utility was breached, impacting systems
+          across 14 states. With infrastructure decentralizing and threat actors
+          becoming more aggressive, small and mid-sized public assets have
+          become easy targets.
+        </p>
+      </section>
+
+      <section className="p-10 bg-white text-center text-black">
+        <h2 className="text-2xl font-bold text-red-600 mb-4">
+          Support the Mission
+        </h2>
+        <p className="max-w-xl mx-auto">
+          AlertLine isn’t just a product — it’s a movement to protect the public
+          infrastructure we all rely on. Our petition calls for more visibility
+          and urgency around OT cybersecurity in rural and municipal systems.
+        </p>
+        <div className="mt-6">
+          <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">
+            Sign the Petition
+          </button>
+        </div>
+      </section>
+
+      <footer className="bg-[#111] text-gray-400 text-center p-4">
+        <p>© 2025 AlertLine. Built in Ontario, for Canada. 🇨🇦</p>
+      </footer>
     </div>
   );
 }
+
